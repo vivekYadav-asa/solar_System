@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> 3D Solar System</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <canvas id="bg"></canvas>
+
+    <!-- Planet names-->
+    <div id="tooltip"></div>
+
+    <!--  controls for pause, theme, and camera reset -->
+    <div id="controls">
+        <button id="pause-btn">Pause</button>
+        <button id="theme-btn">Light Mode</button>
+        <button id="reset-btn">Reset Camera</button>
+    </div>
+
+    <!-- Speed control panel -->
+    <div id="controls-container">
+        <h3> Speed Controls</h3>
+    </div>
+
+   <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
